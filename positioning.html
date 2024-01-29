@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Table</title>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <style>
+        .box {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 20px;
+            display: table;
+        }
+
+        .box span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .small-box {
+            height: 30px;
+            width: 200px;
+            max-height: 30px;
+            max-width: 200px;
+            position: relative;
+            background-color: darkgray;
+        }
+
+        .big-box {
+            height: 100px;
+            width: 100px;
+            max-height: 100px;
+            max-width: 100px;
+            position: relative;
+            background-color: blue;
+        }
+
+        .mini-box {
+            height: 40px;
+            width: 20px;
+            max-height: 40px;
+            max-width: 20px;
+            position: relative;
+            background-color: green;
+        }
+
+        .shifted-small {
+            top: 20px;
+            left: 50px;
+            z-index: 1;
+            background-color: red;
+        }
+
+        .shifted-big {
+            bottom: 100px;
+            left: 100px;
+            z-index: -1;
+        }
+
+        .left-column {
+            position: absolute;
+        }
+
+        .middle-column {
+            position: absolute;
+            left: 400px;
+            top: 30px;
+        }
+
+        .right-column {
+            position: absolute;
+            left: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-column">
+        <div class="box small-box"><span>1</span></div>
+        <div class="box small-box"><span>2</span></div>
+        <div class="box small-box shifted-small"><span>3</span></div>
+        <div class="box small-box"><span>4</span></div>
+    </div>
+
+    <div class="middle-column">
+        <div class="box big-box"><span>5</span></div>
+        <div class="box big-box shifted-big"><span>6</span></div>
+    </div>
+
+    <div class="right-column">
+        <div class="box mini-box"><span>7</span></div>
+    </div>
+</body>
+</html>

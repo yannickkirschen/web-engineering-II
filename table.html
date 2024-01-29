@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Table</title>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            padding: 10px 20px;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .top-align {
+            vertical-align:top;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <table>
+        <caption>Übung Tabelle</caption>
+
+        <tr>
+            <th>Dies ist</th>
+            <th>eine</th>
+            <th>ganz übliche</th>
+            <th>Tabelle</th>
+        </tr>
+
+        <tr>
+            <td colspan="2" rowspan="2"><img src="dhbw.png" alt="Logo der DHBW"></td>
+            <td>Logo der DHBW</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>geht über mehrere Zeilen</td>
+            <td>Die obere Zeile ist leer ...</td>
+        </tr>
+
+        <tr>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+        </tr>
+
+        <tr>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+            <td class="top-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+            <td colspan="2">
+                Sind dies:
+                <ul>
+                    <li>eine Zeile oder</li>
+                    <li>zwei Zeilen oder</li>
+                    <li>drei Zeilen oder</li>
+                    <li>vier Zeilen?</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
